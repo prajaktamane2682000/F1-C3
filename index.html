@@ -13,10 +13,10 @@
 <body>
 
     <div id="container">
-        <div>
+        <a href="#">
             <img src="./Group 1000002588.png">
-
-        </div>
+        </a>
+     
 
         <div id="random">
             <nav class="navbar navbar-expand-lg navbar-light ">
@@ -54,7 +54,10 @@
         </div>
 
         <div id="last-div">
-            <input type="text" placeholder="search your item">
+            <input type="text" placeholder="search your item" >
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M15.2124 14.5735L11.4044 10.6129C12.3835 9.44901 12.92 7.98455 12.92 6.45999C12.92 2.89801 10.022 0 6.45999 0C2.89801 0 0 2.89801 0 6.45999C0 10.022 2.89801 12.92 6.45999 12.92C7.79721 12.92 9.07152 12.5167 10.161 11.751L13.998 15.7416C14.1583 15.9082 14.374 16 14.6052 16C14.824 16 15.0316 15.9166 15.1891 15.7649C15.5239 15.4428 15.5346 14.9085 15.2124 14.5735ZM6.45999 1.68522C9.09286 1.68522 11.2348 3.82713 11.2348 6.45999C11.2348 9.09286 9.09286 11.2348 6.45999 11.2348C3.82713 11.2348 1.68522 9.09286 1.68522 6.45999C1.68522 3.82713 3.82713 1.68522 6.45999 1.68522Z" fill="#69697B"/>
+              </svg></span>
             <img src="./imag.svg" alt="">
             <button id="btn1">Sign in</button>
         </div>
@@ -62,24 +65,28 @@
     </div>
     <!--Main section-->
 
-    <main>
-        <div>
-            <p style="color:#F94A3D">More than Faster</p>
+    <main  >
+        <div class="text">
+            <div class="first-div">
+                <p style="color:#F94A3D">More than Faster</p>
+                <img style="background-color: white; border-radius: 50%;" src="./Group.png" alt="" height="30px">
+            </div>
+            
             <h1>Get your cuisine delivered right to <span style="color:#F94A3D">your door</span> </h1>
             <p>Food that is delivered at the right time. The trendy food delivery partner. Good food is what we deliver.
                 Your hunger companion. </p>
 
             <button id="btn2">Explore Food </button>
         </div>
-        <div>
-            <img src="./Frame.png">
+        <div class="hero-image" >
+            <img src="./Frame.png" width="750px">
         </div>
     </main>
 
 
     <!--Section 3-->
     <section id="sec3">
-        <div>
+        <div id="best-div">
             <h1>Why we are Best in our Town</h1>
             <p>whole grains and low-fat dairy can help to reduce your risk of heart disease by maintaining blood
                 pressure and </p>
@@ -147,7 +154,10 @@
             <img src="./Group 1000002513.png">
             <p>Price $ 12.00</p>
             <button id="btn4"
-                style="border-radius: 10px; background-color:#F94A3D ;color:white ; border-color: #F94A3D ;border:none;">Add
+                style="display: flex; border-radius: 10px; background-color:#F94A3D ;color:white ; border-color: #F94A3D ;border:none; width: 100px;
+                height: 40px;
+                align-items: center;
+                justify-content: center;">Add
                 to Cart+</button>
 
         </div>
@@ -159,7 +169,16 @@
             <button id="btn3">Add to Cart+</button>
         </div>
 
+        
+
     </section>
+    <div class="dot-section">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="6" viewBox="0 0 52 6" fill="none">
+            <line x1="3" y1="3" x2="23" y2="3" stroke="#F94A3D" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="36" cy="3" r="3" fill="#D9D9D9"/>
+            <circle cx="49" cy="3" r="3" fill="#D9D9D9"/>
+          </svg>
+    </div>
 
     <!--Section 6-->
     <section id="sec6">
@@ -198,22 +217,23 @@
         <div class="line">
             <div class="line-1"></div>
             <div class="line-2"></div>
-            
+
         </div>
         <div class="div-test">
             <div>
-                <h1>What our Customers <br> <span style="color: var(--Food-Delivery-Orange-Color, #F94A3D)">are saying</span> </h1>
+                <h1>What our Customers <br> <span style="color: var(--Food-Delivery-Orange-Color, #F94A3D)">are
+                        saying</span> </h1>
             </div>
             <div class="ressella-div">
                 <div>
-                <h4>Rosele Desoza</h4>
+                    <h4>Rosele Desoza</h4>
 
-                <p>Marketing Coordinator</p>
-            </div>
+                    <p>Marketing Coordinator</p>
+                </div>
                 <div><img src="./Group 1000002513.png"></div>
 
             </div>
-           
+
             <div class="para-div">
                 <p>“Having good restaurant reviews is crucial these days. It is not just making our decision
                     to pick
@@ -226,53 +246,109 @@
         </div>
 
     </section>
+    <section class="sec9">
+        <div class="mobile-div">
+            <div class="mobile">
+                <nav class="mobile-nav">
+                    <img src="./menu (1).png" height="6px" width="36px" alt="">
+                    <img src="./icon.png" height="50px" width="50px" alt="">
+                </nav>
+                <div>
+                    <h4 style="padding-left: 20px;">Tasty Recipes</h4>
+                    <div class="cards-menus">
+                        <div class="small-cards">
+                            <img src="./image.png" height="80" width="90">
+                            <h6>Tasty Food</h6>
+                            <img src="./Group 1000002513.png" height="10" width="40">
+                            <div class="price">
+                                <p>& 34.00</p>
+                                <img src="./img-1.svg" alt="">
+                            </div>
 
-    <section class="mobile-div">
-        <div class="mobile">
 
-        </div>
-        <div class="info"> 
-            <div>
-                <h3>Never Feel Hungry! 
-                    Download Our Mobile App 
-                    Order Delicious Food</h3>
+                        </div>
+
+
+                        <div class="small-cards">
+                            <img src="./image (1).png" height="80" width="90">
+                            <h6>Tasty Food</h6>
+                            <img src="./Group 1000002513.png" height="10" width="40">
+                            <div class="price">
+                                <p>& 34.00</p>
+                                <img src="./img-1.svg" alt="">
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="small-card">
+                        <div class="small-cards-3">
+                            <div class="text-info">
+                                <h6>Healthy Food</h6>
+                                <img src="./Group 1000002513.png" height="10" width="40" style="margin-bottom: 10px;">
+                                <p>& 34.00</p>
+                            </div>
+                            <div class="img-2">
+                                <img src="./image (2).png" height="80" width="90">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mobile-footer">
+                        <div class="foot">
+                            <div class="foot-1">
+                                <img src="./Home.png"  alt="">
+                                <p >Home</p>
+                            </div>
+                            <div class="foot-1"><img src="./notigy.svg" alt="">
+                                <p>Notification</p></div>
+                            <div class="foot-1"><img src="./icon.svg" alt=""></div>
+                            <div class="foot-1"><img src="./heart.svg" alt=""><p>Favorites</p></div>
+                            <div class="foot-1"><img src="./profile.svg" alt=""><p>Profile</p></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          
-            <div><p>Online ordering has enabled many restaurants to manage their peak business hours very effectively.</p></div>
-            <div>
-                <button type="button">
-                    <img src="" alt="">
-                </button>
-                <button></button>
+            <div class="info">
+                <div style="color: #FFF;
+                font-family: Poppins;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 600;
+                letter-spacing: 0.76px; margin-left: 100px;">
+                    <h3>Never Feel Hungry! <br>
+                        Download Our Mobile App <br>
+                        Order Delicious Food</h3>
+                </div>
+
+                <div style="color: #FFF;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+             margin-left: 100px; ">
+                    <p>Online ordering has enabled many restaurants to <br> manage their peak business hours very
+                        effectively.</p>
+                </div>
+                <div style=" margin-left: 100px;">
+
+                    <img src="./button-App store (1).png" alt="">
+                    <img src="./button-Play store.png" alt="">
+
+                </div>
             </div>
+
         </div>
 
     </section>
-
-
-    <!--
-    <section id="sec7" >
-       
-        <div class=>
-            <img src="./Rectangle 3919.png">
-            
-
-            
-        </div>
-        <div>
-            <h1>Never Feel Hungry! Download Our Mobile App Order Delicious Food</h1>
-            <p>Online ordering has enabled many restaurants to manage their peak business hours very effectively.</p>
-
-        </div>
-
-    </section>
--->
-    <!-- footer -->
+    
     <footer id="sec8">
 
         <div>
             <img src="./Group 1000002588.png">
-            <p>Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery</p>
+            <p>Retail food delivery is a courier service in which a restaurant, store, or independent
+                food-delivery</p>
             <img src="./Social media icon.png">
         </div>
 
