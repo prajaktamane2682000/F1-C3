@@ -550,6 +550,9 @@ background: #FDECEC;
         top: 0;
         width: auto;
     }
+    #first-div{
+        margin-bottom: 20px;
+    }
 
     #last-div {
         display: flex;
